@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8465798037116927"
+     crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Favicon.jpg" class="favicon"><title>Nerocast</title>
+    <link rel="stylesheet" href="Stylesheet.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>  
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <div id="loader" class="loader"></div>
+    <div class="card">  
+        <div class="search">  
+          <input type="text" title="Search bar" class="search-bar" placeholder="Search your city..." id="textboxSearch" autofocus>  
+          <button id="search" onclick="searchFunction()" title="Search">  
+            <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.442 10.442a1 1 0 011.415 0l3.85 3.85a1 1 0 01-1.414 1.415l-3.85-3.85a1 1 0 010-1.415z" clip-rule="evenodd"></path><path fill-rule="evenodd" d="M6.5 12a5.5 5.5 0 100-11 5.5 5.5 0 000 11zM13 6.5a6.5 6.5 0 11-13 0 6.5 6.5 0 0113 0z" clip-rule="evenodd"></path></svg>  
+          </button> 
+          <div class="historylist" id="historylist">
+             <ul id="searchHistory"></ul> 
+          </div> 
+        </div>  
+        <div class="weather loading" id="weather-loading">  
+          <h2 class="city">Weather in Nairobi</h2><hr>  
+          <h1 class="temp">13°C</h1>   
+          <div class="description">Cloudy</div>  
+          <div class="humidity">Humid</div>  
+          <div class="wind">Fast</div>  
+        </div>  
+      </div> 
+      <div class="footer">
+        <a href="About.html" >About</a>
+        <!--<a href="Untitled-1.html" target="_blank" >Coming Soon</a>-->
+        <a href= "mailto:calvinkmwaura@gmail.com?subject = Feedback&body = Message" >Feedback</a>
+      </div>
+     <button title="history" class="history" id="history" type="menu" onclick="history()"><span class="material-icons">menu</span></button>
+     <div class="s-media">
+       <a href="https://www.instagram.com/fatuous.nerd_/" target="_blank" class="ig" title="Instagram" ><img class="ing" src="ig 1.jfif" ></a>
+     </div>
+     <div id="time">
+      <div id="timedate">
+        <a id="mon">January</a>
+        <a id="d">1</a>,
+        <a id="y">0</a><br/>
+        <a id="h">12</a> :
+        <a id="m">00</a>:
+        <a id="s">00</a>:
+        <a id="mi">000</a>
+      </div>
+    </div>
+      <script src="Weather.js" ></script>
+      <h1 id="demo"></h1>
+</body>
+</html>

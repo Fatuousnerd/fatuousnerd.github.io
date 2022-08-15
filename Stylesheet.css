@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic:wght@700&display=swap');
+*{  
+    padding: 0;  
+    margin: 0;  
+    box-sizing: border-box;  
+    -webkit-font-smoothing: antialiased;  
+  }  
+  body{  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh;  
+    margin: 0;  
+    background: rgb(41, 39, 39);  
+    font-family: 'Open Sans', sans-serif;  
+    background-image: url(https://source.unsplash.com/random/1600x900/?landscape);
+    background-repeat: no-repeat;
+  } 
+  hr{
+    max-width: 220px;
+    background-color: #404040;
+    border: .5 sloid #000000;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .card{  
+    background: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    opacity: 80%; 
+    color: white;  
+    padding: 1.5rem;  
+    border-radius: 30px;  
+    width: 100%;  
+    max-width: 420px;  
+    margin: 1rem;  
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  } 
+  #weather-loading{
+    color: #141414;
+  }
+  .search{  
+    display: flex;  
+    align-items: center;  
+    justify-content: center;  
+  }  
+  .search button{  
+    margin: 1rem;  
+    border-radius: 50%;  
+    border: none;  
+    height: 2.5rem;  
+    width: 2.5rem;  
+    outline: none;  
+    background-color: rgba(92, 88, 88, 0.644);  
+    color: white;  
+  }  
+  .search button:hover{  
+    background-color: rgb(92, 88, 88);  
+    cursor: pointer;  
+    transition: 0.2s ease-in-out;  
+  }  
+input.search-bar {  
+  border: none;  
+  outline: none;  
+  padding: 1rem 1rem;  
+  border-radius: 50px;  
+  width: 15rem;  
+  height: 2.5rem;  
+  background-color: white;  
+  color: #242424;  
+  font-family: inherit;  
+  font-size: 100%;
+  text-transform: capitalize; 
+} 
+.search-bar:focus{
+  width: 20rem;
+}
+.description{  
+  text-transform: capitalize;  
+} 
+.footer{
+  width: 100%;
+  height: 75px;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: black;
+  font-weight: 1000;
+  font-size: 2rem;
+  font-family: 'Noto Naskh Arabic', serif;
+  position: fixed;
+  top: 0px;
+  border-radius: 5px;
+  border: none;
+  opacity: 75%;
+  text-align: center;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+.footer a{
+  margin: 100px;
+  font-size: 1rem;
+  color: 	#000000;
+}
+.footer a:hover{
+  cursor: pointer;
+  text-decoration: underline;
+  color: #404040;
+} 
+.loader{
+  width: 300px;
+  height: 300px;
+  color: #FFFF00;
+  border: 10px dotted rgba(255, 255, 255, 0.2);
+  background-color: transparent;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 9999999;
+  animation: spin 1.5s infinite;
+  display: block;
+}  
+@keyframes spin{
+  to{ transform: rotate(360deg);}
+}
+.history{
+  width: 30px;
+  height: 35px;
+  border-radius: 30%;
+  color: #ddd;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #bbb;
+  position: absolute;
+  top: 38%;
+  left: 65.5%;
+  backdrop-filter: blur(5px);
+  transition: color .5s;
+}
+ul{
+  text-transform: capitalize;
+}
+.history:hover{
+  background-color: transparent;
+  backdrop-filter: 5px;
+  color: white;
+  cursor: pointer;
+}
+.historylist{
+  border: 2px solid #bbb;
+  width:200px;
+  height:100px;
+  overflow-y: scroll;
+  position: absolute;
+  top: 30%;
+  left: 68%;
+  font-weight: 800;
+  text-align: left;
+  border-radius: 10px;
+  display: none;
+  background-color: #242424;
+  animation: pop .5s ease-in-out forwards;
+  font-size: 1rem;
+}
+li:hover { 
+  background-color:	#383838;
+}
+img{
+  border-radius: 10.5px;
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 1%;
+  left: 0%;
+  opacity: 90.2;
+}
+.s-media{
+  position: absolute;
+  top: 650px;
+  left: 0.5%;
+}
+@keyframes pop {
+  50%{transform: translate(35px)};
+  100%{transform: scale3d(5px);}
+  
+}
+#time{
+  width: 150px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  position: absolute;
+  top: 92%;
+  left: 88%;
+  color: #fff;
+  text-align: left;
+}
+#timedate{
+  font: 'Oswald', sans-serif;
+  text-align: left;
+  margin-left: 40px auto;
+}
+#timedate hr{
+  width: 350px;
+}
+#timedate a{
+  margin: 0;
+  font-weight: 500;
+  font-size: 20px;
+}
+#time:hover{
+  cursor: context-menu;
+}
+
+  

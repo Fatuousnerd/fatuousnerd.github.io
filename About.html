@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Favicon.jpg" class="favicon" ><title>About Nerocast</title>
+</head>
+<body>
+    <div id="loader"></div>
+    <nav>
+        <a href="Index.html" ><img src="Favicon.jpg"></a>   
+    </nav>
+    <div class="content">
+        <h1>About Nerocast</h1>
+        <p><a href="Index.html">Nerocast</a> is a website that shows current weather of different cities/towns accross the world based on your searches.</p>
+        <div class="s-media">
+            <h1>Social media</h1>
+            <a href="https://www.instagram.com/fatuous.nerd_/" target="_blank" title="Instagram" ><img src="ig 1.jfif" ></a>
+            <a href="https://www.youtube.com/channel/UCqpTZvxBbJwdlvFISmgi6Yw" target="_blank" title="Youtube" ><img src="YT2.png" ></a>
+        </div>
+    </div>
+    <style>
+        body{
+            background: linear-gradient(35deg, 	#800080, #4B0082);
+            overflow-x: hidden;
+        }
+        nav{
+            background-color: rgba(255, 255, 255, 0.2);
+            color: #424242;
+            border: #424242;
+            border-radius: 7px;
+            box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+            width: 100vw;
+            height: 100px;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+        }
+        nav img{
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;  
+            cursor: pointer;                      
+        }
+        .content{
+            width: 800px;
+            background-color: #eee;
+            height: auto;
+            position: absolute;
+            top: 35%;
+            left: 20%;
+            border-radius: 7px;
+            border: 0 10px 10px rgba(0, 0, 0, 0.2);
+            padding: 50px;
+            text-align: center;
+            justify-content: center;
+        }
+        .content h1{
+            text-decoration: underline #4B0082;
+            color: #4B0082;
+        }
+        .s-media{
+            display: flexbox;
+        }
+        .s-media img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+        #loader{
+            width: 300px;
+            height: 300px;
+            color: #FFFF00;
+            border: 10px outset #800080;
+            background-color: transparent;
+            border-radius: 50%;
+            position: absolute;
+            z-index: 9999999;
+            animation: spin 1.5s infinite;
+            display: block;
+            position: absolute;
+            top: 40%;
+            left: 40%;
+            display: block;
+        } 
+        @keyframes spin{
+            to{ transform: rotate(-360deg);}
+        }
+    </style>
+    <script>
+        window.addEventListener('load', () => {
+            let loader = document.getElementById("loader");
+
+                loader.style.display = "none"
+        })
+    </script>
+</body>
+</html>
