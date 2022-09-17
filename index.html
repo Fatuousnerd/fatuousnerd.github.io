@@ -54,7 +54,18 @@
       </div>
     </div>
       <script src="Weather.js" ></script>
- 
+      <script>
+
+udatevisitcount();
+
+function udatevisitcount() {
+    fetch('https://api.countapi.xyz/hit/fatuousnerd.github.io/index.html')
+    .then(res => res.json())
+    .then(res => {
+        console.log("Total visits:  " + res.value)
+    })
+}
+      </script>
       <h1 id="demo"></h1>
 </body>
 </html>
