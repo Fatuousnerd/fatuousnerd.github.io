@@ -134,6 +134,7 @@
             .then(res => res.json())
             .then(res => {
                 countEl.innerHTML = res.value;
+                console.log("Total visits:  " + res.value)
             })
         }
     </script>
