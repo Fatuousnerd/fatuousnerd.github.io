@@ -20,6 +20,10 @@
             <a href="https://www.youtube.com/channel/UCqpTZvxBbJwdlvFISmgi6Yw" target="_blank" title="Youtube" ><img src="YT2.png" ></a>
         </div>
     </div>
+    <div id="visitcounter">
+        <h3>Total page visits.</h3>
+        <h1 id="count" >0</h1>
+    </div>
     <style>
         body{
             background: linear-gradient(35deg, 	#800080, #4B0082);
@@ -87,6 +91,31 @@
         @keyframes spin{
             to{ transform: rotate(-360deg);}
         }
+        #visitcounter{
+            width: 150px;
+            height: 100px;
+            padding: 0px;
+            background-color: #eee;
+            position: absolute;
+            top: 85vh;
+            margin-left: 25px;
+            border-radius: 7px;
+            box-sizing: border-box;
+            box-shadow: rgba(0, 0, 0, 0.35) 15px 15px 15px 15px;
+            justify-content: center;
+            align-items: center;
+        }
+        #visitcounter h3{
+            text-align: center;
+            font-size: 16px;
+            text-decoration: solid #800080 underline;
+            color: #800080;
+        }
+        #visitcounter h1{
+            text-align: left;
+            font-family: 'Muli', sans-serif;
+        }
+        @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
     </style>
     <script>
         window.addEventListener('load', () => {
@@ -94,6 +123,18 @@
 
                 loader.style.display = "none"
         })
+
+        const countEl = document.getElementById("count");
+
+        udatevisitcount();
+
+        function udatevisitcount() {
+            fetch('https://api.countapi.xyz/hit/fatuousnerd.github.io/about.html')
+            .then(res => res.json())
+            .then(res => {
+                countEl.innerHTML = res.value;
+            })
+        }
     </script>
 </body>
 </html>
