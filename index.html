@@ -53,19 +53,10 @@
         <a id="mi">000</a>
       </div>
     </div>
+    <div id="counter">
+      <h1 id="counttxt" >0</h1>
+    </div>
       <script src="Weather.js" ></script>
-      <script>
-
-udatevisitcount();
-
-function udatevisitcount() {
-    fetch('https://api.countapi.xyz/hit/fatuousnerd.github.io/index.html')
-    .then(res => res.json())
-    .then(res => {
-        console.log("Total visits:  " + res.value)
-    })
-}
-      </script>
       <h1 id="demo"></h1>
       <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HV70CLCV46"></script>

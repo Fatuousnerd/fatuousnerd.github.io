@@ -210,5 +210,19 @@ img{
 #time:hover{
   cursor: context-menu;
 }
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+#counter{
+  width: 55px;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(05px);
+  border-radius: 10px;
+  position: absolute;
+  top: 85%;
+  left: 0%;
+  color: #000;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+}
 
   

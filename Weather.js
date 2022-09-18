@@ -150,5 +150,16 @@ function initClock() {
 }
 // END CLOCK SCRIPT
 
+var countEl = document.getElementById("counttxt");
 
+updatevisitcount();
+
+function updatevisitcount() {
+    fetch('https://api.countapi.xyz/hit/fatuousnerd.github.io/index.html')
+    .then(res => res.json())
+    .then(res => {
+      countEl.innerText = res.value;
+        console.log("Total visits:  " + res.value)
+    })
+}
 
