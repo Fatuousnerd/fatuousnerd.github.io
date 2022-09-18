@@ -75,12 +75,23 @@ function history() {
   }
 }
 
-function AlrtOff(){
-  const AlrtOff = new Notification("Sorry!!! You seem to be offline.", {
-    body: "Please check your connection and try again",
+function AlrtOn(){
+  const AlrtOn = new notification("Welcome back online!", {
+    body: "Search for weather across towns/cities around the world.", 
     icon: "F.N.jfif"
   })
 }
+
+function AlrtOff(){
+  const AlrtOff = new Notification("Sorry!!! You seem to be offline.", {
+    body: "Please check your connection and try again.",
+    icon: "F.N.jfif"
+  })
+}
+
+window.addEventListener("online", () => {
+  AlrtOn();
+})
 
 window.addEventListener('offline', () => {
   AlrtOff();
