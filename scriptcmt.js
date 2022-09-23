@@ -49,7 +49,20 @@ for (let i = 0; i < localStorage.length; i++){
     sid.innerHTML += `${key}: ${value}<br />`;
 };
 
-console.log(localStorage)
+console.log(localStorage);
+
+var countEl = document.getElementById("counttxt");
+
+updatevisitcount();
+
+function updatevisitcount() {
+    fetch('https://api.countapi.xyz/hit/fatuousnerd.github.io/comments.html')
+    .then(res => res.json())
+    .then(res => {
+      countEl.innerText = res.value;
+        console.log("Total visits:  " + res.value)
+    })
+}
 
 //comment.addEventListener('click', (event) => {
   //  commented.push(field.value)
