@@ -83,6 +83,11 @@ back.onclick = function(){
     container.classList.remove("lost");
 }
 
+const handleClick = (e) => {
+    e.preventDefault();
+   window.open(`mailto:${email}?subject=${subject}&body=${message}`);
+ }
+
 //comment.addEventListener('click', (event) => {
   //  commented.push(field.value)
     
