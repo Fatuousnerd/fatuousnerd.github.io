@@ -14,13 +14,14 @@
         <style>
             a{
                 position: absolute;
-                top: 35.6%;
-                left: 27.5%;
+                top: 0%;
+                left: 50%;
                 z-index: 99999;
                 margin: 15px;
                 cursor: pointer;
             }
             .material-symbols-outlined {
+                cursor: pointer;
               font-variation-settings:
               'FILL' 1,
               'wght' 400,
@@ -29,7 +30,7 @@
             }
             </style>
     </div>
-    <div class="container">
+    <div class="container" id="container">
         <h2>Leave us a Comment.</h2>
         <form action="">
             <input type="text" id="User" placeholder="Username" required>
@@ -38,6 +39,15 @@
                 <input id="comment" type="button" value="Comment">
                 <button id="clear" >Cancel</button>
             </div>
+            <input type="button" value="Email us instead" id="mailinstd"></input>
+        </form>
+    </div>
+    <div id="mail" class="mail">
+        <form action="mailto:calvinkmwaura@gmail.com" method="GET">
+            <input name="subject" type="text" class="subject" placeholder="Subject"/>
+            <textarea name="body" placeholder="Body"></textarea>
+            <input type="submit" value="Send" class="send"/>
+            <span class="material-symbols-outlined" id="back">undo</span>
         </form>
     </div>
     <div id="counter">

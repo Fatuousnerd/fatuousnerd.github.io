@@ -6,7 +6,11 @@ comment = document.getElementById("comment"),
 commented = [],
 sid = document.getElementById("comments"),
 write = document.getElementById("write"),
-User = document.getElementById("User");
+User = document.getElementById("User"),
+mailinstd = document.getElementById("mailinstd"),
+mail = document.getElementById("mail"),
+container = document.getElementById("container"),
+back = document.getElementById("back");
 
 field.onfocus = function(){
     this.setAttribute('placeholder', '');
@@ -62,6 +66,17 @@ function updatevisitcount() {
       countEl.innerText = res.value;
         console.log("Total visits:  " + res.value)
     })
+}
+
+mailinstd.onclick = function(){
+    mail.classList.add("open");
+    container.classList.add('lost');
+
+}
+
+back.onclick = function(){
+    mail.classList.remove("open");
+    container.classList.remove("lost");
 }
 
 //comment.addEventListener('click', (event) => {

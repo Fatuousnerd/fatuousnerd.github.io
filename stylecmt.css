@@ -49,6 +49,7 @@ input[type="button"], button{
 input[type="button"]{
     color: #fff;
     background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 10px;
 }
 button{
     color: #333;
@@ -103,4 +104,58 @@ button{
     color: #000;
     text-align: center;
     font-family: 'Muli', sans-serif;
-  }
+}
+.mail{
+    transform: translate(-50%, -50%) scale(0.1);
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 600px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    padding: 15px 10px;
+    border-radius: 7px;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: transform .5s;
+}
+.open{
+    visibility: visible;
+    position: absolute;
+    transform: translate(-50%, -50%) scale(1);
+}
+.lost{
+    display: none;
+    visibility: hidden;
+}
+.subject{
+    margin-bottom: 15px;
+    padding: 20px;
+    border: 1px solid;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: .5rem;
+    min-width: 100%;
+    height: 20px;
+    box-shadow: 0 0 50px rgb(0,0,0,0.1);
+    color: white;
+    font-family: 'Nova Mono';
+    text-transform: capitalize;
+}
+.send{
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-family: 'Nova Mono';
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+#back{
+    color: #fff;
+    margin: 10px;
+    position: absolute;
+    left: calc(100% - 48px);
+}    
