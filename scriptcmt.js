@@ -53,6 +53,10 @@ for (let i = 0; i < localStorage.length; i++){
     sid.innerHTML += `${key}: ${value}<br />`;
 };
 
+window.addEventListener('load', () => {
+    localStorage.removeItem('google_experiment_mod44');
+})
+
 console.log(localStorage);
 
 var countEl = document.getElementById("counttxt");
