@@ -225,5 +225,14 @@ img{
   text-align: center;
   font-family: 'Muli', sans-serif;
 }
+#counter h1{
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: #242424;
+  text-align: center;
+
+}
 
   

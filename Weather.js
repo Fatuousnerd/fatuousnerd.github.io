@@ -161,7 +161,7 @@ function initClock() {
 }
 // END CLOCK SCRIPT
 
-/*var countEl = document.getElementById("counttxt");
+var countEl = document.getElementById("counttxt");
 
 updatevisitcount();
 
@@ -172,5 +172,5 @@ function updatevisitcount() {
       countEl.innerText = res.value;
         console.log("Total visits:  " + res.value)
     })
-}*/
+}
 

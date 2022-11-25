@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="Favicon2.jfif" class="favicon" ><title>About Nerocast</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
     <link rel="stylesheet" href="loader.scss">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8465798037116927"
      crossorigin="anonymous"></script>
@@ -15,13 +16,83 @@
         <a href="index.html" ></a>   
     </nav>
     <div class="content">
-        <h1>About Nerocast</h1>
+        <h1>About Nerocast</h1><hr>
         <p><a href="index.html">Nerocast</a> is a website that shows current weather of different cities/towns accross the world based on your searches.</p>
         <div class="s-media">
-            <h1>Social accounts</h1>
-            <a href="https://www.instagram.com/fatuous.nerd_/" target="_blank" title="Instagram" ><img src="ig 1.jfif" ></a>
-            <a href="https://www.youtube.com/channel/UCqpTZvxBbJwdlvFISmgi6Yw" target="_blank" title="Youtube" ><img src="YT2.png" ></a>
-            <a href=""></a>
+            <h1>Follow us</h1><hr>
+    <div class="Social-media">
+      <a href="https://github.com/Fatuousnerd" target="_blank"><font color="#007cc4"><i class="fab fa-github"></i></font></a>
+      <a href="https://twitter.com/Jamil10232823" target="_blank"><font color="#007cc4"><i class="fab fa-twitter"></i></font></a>
+      <a href="https://www.instagram.com/fatuous.nerd_/"><font color="#007cc4"><i class="fab fa-instagram"></i></font></a>
+      <a href="https://www.youtube.com/channel/UCqpTZvxBbJwdlvFISmgi6Yw" target="_blank"><font color="#007cc4"><i class="fab fa-youtube"></i></a></font>
+      <style>
+        h1{
+  font-family: sans-serif;
+  font-weight: normal;
+  font-size: 25px;
+  letter-spacing: 4px;
+  color: #007cc4;
+  text-align: center;
+
+}
+.Social-media{
+  display: flex;
+  justify-content: center;
+}
+a{
+  display: flex;
+  background: #fff;
+  height: 45px;
+  width: 45px;
+  margin: 0 15px;
+  border-radius: 8px;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 6px 6px 10px -1px rgba(0,124,196,0.15),
+              -6px -6px 10px -1px rgba(255,255,255,0.7);
+  border: 1px solid rgba(0, 124, 196, 0);
+  transition: transform 0.5s
+}
+a i{
+  font-size: 50px;
+  color:#777;
+  transition: transform 0.5s;
+}
+a:hover{
+  box-shadow:inset 4px 4px 6px -2px rgba(0,0,0,0.2),
+              inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                    -0.5px -0.5px 0px -1px rgba(255,255,255,1),
+                    0.5px 0.5px 0px rgba(0,0,0,0.15),
+                    0px 12px 10px -10px rgba(0,0,0,0.05);
+  border: 1px solid rgba(0, 124, 196, 0.1);
+  transform: translateY(2px);
+}
+a:hover i{
+  transform: scale(0.90);
+}
+a:hover .fa-facebook{
+  color: #3b5998;
+}
+a:hover .fa-github{
+  color: #171515;
+}
+a:hover .fa-twitter{
+  color: #00acee;
+}
+a:hover .fa-whatsapp{
+  color: #4fce5d;
+}
+a:hover .fa-instagram{
+  color: #f14843;
+}
+a:hover .fa-youtube{
+  color: #f00;
+}
+
+      </style>
+    </div>
+
         </div>
     </div>
     <div id="visitcounter">
@@ -81,7 +152,7 @@
         }
         .content{
             width: 800px;
-            background-color: rgba(0, 0, 0, 0.2);
+            background-color: #f1f1f1;
             backdrop-filter: blur(20px);
             height: auto;
             position: absolute;
@@ -92,18 +163,20 @@
             padding: 50px;
             text-align: center;
             justify-content: center;
+            font-family: sans-serif;
+  font-weight: normal;
+  letter-spacing: 4px;
+  color: #007cc4;
+  text-align: center;
         }
-        .content h1{
-            text-decoration: underline #4B0082;
-            color: #4B0082;
-        }
-        .s-media{
-            display: flexbox;
-        }
-        .s-media img{
-            width: 100px;
-            height: 100px;
-            border-radius: 40px;
+        p a{
+            all: initial;
+            color: #3b5998;
+            font-family: sans-serif;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-align: center;
+  text-decoration: dotted 2px red;
         }
         #loader{
             width: 300px;
@@ -157,6 +230,8 @@
             text-align: center;
             font-family: 'Muli', sans-serif;
         }
+
+
     </style>
     <script>
         
