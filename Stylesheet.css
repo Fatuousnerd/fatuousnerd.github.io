@@ -183,15 +183,16 @@ img{
   
 }
 #time{
-  width: 150px;
+  width: 200px;
   height: 50px;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(10px);
   border-radius: 10px;
   position: absolute;
   top: 92%;
-  left: 88%;
+  left: 83%;
   color: #fff;
+  padding-left: 02px;
   text-align: left;
 }
 #timedate{

@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="Favicon.jpg" class="favicon" ><title>About Nerocast</title>
+    <link rel="icon" href="Favicon2.jfif" class="favicon" ><title>About Nerocast</title>
+    <link rel="stylesheet" href="loader.scss">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8465798037116927"
      crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="loader"></div>
     <nav>
-        <a href="index.html" ><img src="Favicon.jpg"></a>   
+        <a href="index.html" ></a>   
     </nav>
     <div class="content">
         <h1>About Nerocast</h1>
@@ -27,7 +28,7 @@
         <h1 id="count" >0</h1>
     </div>
     <div id="ads728-90">
-        <script type="text/javascript">
+       <script type="text/javascript">
             atOptions = {
                 'key' : 'e97ba13729161f969b2acdd0a9fccc40',
                 'format' : 'iframe',
@@ -37,11 +38,28 @@
             };
             document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.highperformancedisplayformat.com/e97ba13729161f969b2acdd0a9fccc40/invoke.js"></scr' + 'ipt>');
         </script>
-    </div>
+    </div>   
+    <div id="ldball"></div>
     <style>
+        
         body{
-            background: linear-gradient(35deg, 	#800080, #4B0082);
+            background: url(download.jfif);
+            background-repeat: no-repeat;
+            background-size: cover;
             overflow-x: hidden;
+        }
+        #ldball{
+            background: url(qatarldr.jfif);
+            border-radius: 0%;
+            width: 165px;
+            height: 165px;
+            border-radius: 50%;
+            position: absolute;
+            left: 45%;
+            top: 45%;
+            z-index: 999999;
+            display: flex;
+            animation: spin 1s infinite;
         }
         nav{
             background-color: rgba(255, 255, 255, 0.2);
@@ -63,7 +81,8 @@
         }
         .content{
             width: 800px;
-            background-color: #eee;
+            background-color: rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(20px);
             height: auto;
             position: absolute;
             top: 35%;
@@ -100,10 +119,10 @@
             position: absolute;
             top: 40%;
             left: 40%;
-            display: block;
+            display: none;
         } 
         @keyframes spin{
-            to{ transform: rotate(-360deg);}
+            to{ transform: rotate(360deg);}
         }
         #visitcounter{
             width: 55px;
@@ -140,10 +159,13 @@
         }
     </style>
     <script>
-        window.addEventListener('load', () => {
-            let loader = document.getElementById("loader");
+        
 
-                loader.style.display = "none"
+        
+
+        window.addEventListener('load', () => {
+            let qatld = document.getElementById("ldball");
+            qatld.style.display = 'none';
         })
 
         const countEl = document.getElementById("count");
