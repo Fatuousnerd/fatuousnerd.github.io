@@ -17,7 +17,7 @@ let weather = {
     document.querySelector(".humidity").innerText="Humidity: "+humidity+"%";  
     document.querySelector(".wind").innerText="Wind Speed: "+speed+" km/h";     
     document.querySelector(".weather").classList.remove("loading");  
-    document.body.style.backgroundImage="url('https://www.pexels.com/search/"+ name +")";  
+    document.body.style.backgroundImage="url('https://www.pexels.com/search/"+ name + "/" +")";  
   },  
   search: function () {  
     this.fetchWeather(document.querySelector(".search-bar").value);  
