@@ -36,23 +36,27 @@ weather.fetchWeather("Nairobi");
 
 function bgset(){
 const api_key = "563492ad6f917000010000014061e5d42524467b95e7f27d98d41b00";
-  let page_num = 1;
-  let search = false;
-  
-  async function SearchPhotos(query, page_num){
-    const data=await fetch(`https://api.pexels.com/v1/search?query=${query}&page=${page_num}`, 
-    {
-        method: "GET",
-        headers: {
-            Accept: "application/json",
-            Authorization: api_key,
-        },
-    });
-    const response=await data.json();
-    console.log(response);
-
-    display_images(response);
+  const container = document.querySelector(".container");
+const cardTag;
+function getPhotos(images) {
+   images.map(image => {
+     cardTag = `<div class="card">
+              <img src=${image.src.tiny} />
+         </div>`;
+     container.innerHTML += cardTag;
+   })
 }
+fetch("https://api.pexels.com/v1/search?query=people",{
+  headers: {
+    Authorization: api_key
+  }
+})
+   .then(resp => {
+     return resp.json()
+   })
+   .then(data => {
+     getPhotos(data.photos);
+   })
 }
 
 //for the loader
