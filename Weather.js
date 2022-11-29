@@ -35,20 +35,20 @@ document.querySelector(".search-bar").addEventListener("keyup",function(event) {
 weather.fetchWeather("Nairobi"); 
 
 function bgset(){
-const api_key = "563492ad6f917000010000014061e5d42524467b95e7f27d98d41b00";
-  const container = document.querySelector(".container");
+const container = document.querySelector(".container");
 //const cardTag;
 function getPhotos(images) {
    images.map(image => {
-  const cardTag = `<div class="card">
+   const cardTag = `<div class="card">
               <img src=${image.src.tiny} />
          </div>`;
      container.innerHTML += cardTag;
    })
 }
-fetch("https://api.pexels.com/v1/search?query=${name}",{
+        const pexels = "https://api.pexels.com/v1/search?query="+name;
+fetch(pexels,{
   headers: {
-    Authorization: api_key
+    Authorization: "563492ad6f917000010000014061e5d42524467b95e7f27d98d41b00"
   }
 })
    .then(resp => {
