@@ -45,7 +45,9 @@ function getPhotos(images) {
      container.innerHTML += cardTag;
    })
 }
-        const pexels = "https://api.pexels.com/v1/search?query="+name;
+  var name = document.getElementById("textboxSearch");
+  var nameval = name.value;
+        const pexels = "https://api.pexels.com/v1/search?query="+nameval;
 fetch(pexels,{
   headers: {
     Authorization: "563492ad6f917000010000014061e5d42524467b95e7f27d98d41b00"
