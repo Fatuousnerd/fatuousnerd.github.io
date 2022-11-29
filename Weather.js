@@ -1,6 +1,6 @@
-window.addEventListener('load', () => {
+/*window.addEventListener('load', () => {
   location.href = "mnt.html";
-})
+})*/
 
 let weather = {  
   "apiKey": "e2c1d873e17655abe9c9bdf6946db59d",  
@@ -40,14 +40,13 @@ weather.fetchWeather("Nairobi");
 
 function bgset(){
 const container = document.querySelector(".container");
-//const cardTag;
 function getPhotos(images) {
    images.map(image => {
-     document.style.backgroundImage = image.src.tiny;
-   //const cardTag = `<div class="cardbg">
-           //   <img src=${image.src.tiny} />
-         //</div>`;
-    // container.style.background += cardTag;
+    // document.style.backgroundImage = image.src.tiny;
+   const cardTag = `<div class="cardbg">
+              <img src=${image.src.landscape} />
+         </div>`;
+     container.innerHTML = cardTag;
    })
 }
   var name = document.getElementById("textboxSearch");
@@ -202,7 +201,7 @@ function updatevisitcount() {
     fetch('https://api.countapi.xyz/hit/fatuousnerd.github.io/index.html')
     .then(res => res.json())
     .then(res => {
-      countEl.innerText = res.value;
+      
         console.log("Total visits:  " + res.value)
     })
 }

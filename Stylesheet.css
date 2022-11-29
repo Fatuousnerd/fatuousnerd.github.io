@@ -14,6 +14,7 @@
     background: rgb(41, 39, 39);  
     font-family: 'Open Sans', sans-serif;  
     background-repeat: no-repeat;
+    overflow: hidden;
   } 
   hr{
     max-width: 220px;
@@ -37,10 +38,15 @@
     text-align: center;
     border: 1px solid rgba(255, 255, 255, 0.3);
   } 
-.cardbg{
+.cardbg img{
     min-width: 100vw;
     min-height: 100vh;
     z-index: -9999;
+}
+.container img{
+  min-width: 100vw;
+  min-height: 100vh;
+  z-index: -9999;
 }
   #weather-loading{
     color: #141414;
