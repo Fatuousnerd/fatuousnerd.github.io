@@ -39,10 +39,11 @@ const container = document.querySelector(".container");
 //const cardTag;
 function getPhotos(images) {
    images.map(image => {
-   const cardTag = `<div class="cardbg">
-              <img src=${image.src.tiny} />
-         </div>`;
-     container.innerHTML += cardTag;
+     document.style.backgroundImage = ${image.src.tiny};
+   //const cardTag = `<div class="cardbg">
+           //   <img src=${image.src.tiny} />
+         //</div>`;
+    // container.style.background += cardTag;
    })
 }
   var name = document.getElementById("textboxSearch");
