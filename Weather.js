@@ -39,7 +39,7 @@ const container = document.querySelector(".container");
 //const cardTag;
 function getPhotos(images) {
    images.map(image => {
-   const cardTag = `<div class="card">
+   const cardTag = `<div class="cardbg">
               <img src=${image.src.tiny} />
          </div>`;
      container.innerHTML += cardTag;
