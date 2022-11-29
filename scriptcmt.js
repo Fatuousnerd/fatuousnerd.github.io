@@ -43,10 +43,10 @@ comment.onclick = function(){
         field.style.borderLeft = '9px solid red';
         return
     }
-    localStorage.setItem(User.value, field.value);
+   // localStorage.setItem(User.value, field.value);
 }
 
-for (let i = 0; i < localStorage.length; i++){
+/*for (let i = 0; i < localStorage.length; i++){
     const key = localStorage.key(i);
     const value = localStorage.getItem(key);
 
@@ -55,7 +55,7 @@ for (let i = 0; i < localStorage.length; i++){
 
 window.addEventListener('load', () => {
     localStorage.removeItem('google_experiment_mod44');
-})
+})*/
 
 console.log(localStorage);
 
@@ -67,7 +67,7 @@ function updatevisitcount() {
     fetch('https://api.countapi.xyz/hit/fatuousnerd.github.io/comments.html')
     .then(res => res.json())
     .then(res => {
-      countEl.innerText = res.value;
+      //countEl.innerText = res.value;
         console.log("Total visits:  " + res.value)
     })
 }
