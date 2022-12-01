@@ -1,1 +1,1 @@
-SELECT * FROM index.html;
+create database test;
