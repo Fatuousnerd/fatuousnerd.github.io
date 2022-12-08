@@ -1,1 +1,1 @@
-create database test;
+CREATE TABLE tabletset;
