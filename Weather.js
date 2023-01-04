@@ -37,33 +37,6 @@ document.querySelector(".search-bar").addEventListener("keyup",function(event) {
 }); 
 weather.fetchWeather("Nairobi"); 
 
-function bgset(){
-const container = document.querySelector(".container");
-function getPhotos(images) {
-   images.map(image => {
-    // document.style.backgroundImage = image.src.tiny;
-   const cardTag = `<div class="cardbg">
-              <img src=${image.src.landscape} />
-         </div>`;
-     container.innerHTML = cardTag;
-   })
-}
-  var name = document.getElementById("textboxSearch");
-  var nameval = name.value;
-        const pexels = "https://api.pexels.com/v1/search?query="+nameval;
-fetch(pexels,{
-  headers: {
-    Authorization: "563492ad6f917000010000014061e5d42524467b95e7f27d98d41b00"
-  }
-})
-   .then(resp => {
-     return resp.json()
-   })
-   .then(data => {
-     getPhotos(data.photos);
-   })
-}
-
 //for the loader
 var loader = document.getElementById("loader");
 window.addEventListener("load", function(){
