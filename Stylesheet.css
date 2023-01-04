@@ -15,6 +15,7 @@ body{
   font-family: 'Open Sans', sans-serif;  
   background-repeat: no-repeat;
   overflow: hidden;
+  background: https://source.unsplash.com/random/1600x900/?nature,water,mammals;
 } 
 hr{
   max-width: 220px;
