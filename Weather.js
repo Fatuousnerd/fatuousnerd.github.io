@@ -178,7 +178,7 @@ function updatevisitcount() {
     })
 }
 
-function setop(){
+settings.onclick = () => {
   var setmenu = document.getElementById("setmenu");
   if(setmenu.style.display == "none"){
     setmenu.style.display == "block"
