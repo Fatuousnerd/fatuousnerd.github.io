@@ -180,6 +180,8 @@ ul{
   top: 80%;
   left: 80%;
   cursor: pointer;
+  border: .5px solid #eee;
+  outline: none;
 }
 .settings:hover{
   color: #000;
