@@ -179,5 +179,10 @@ function updatevisitcount() {
 }
 
 function setop(){
-  if(){} else{}
-}
+  var setmenu = document.getElementById("setmenu");
+  if(setmenu.style.display == "none"){
+    setmenu.style.display == "block"
+  } else{
+    setmenu.style.display == "none"
+  }
+};
