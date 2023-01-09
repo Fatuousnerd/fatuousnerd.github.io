@@ -106,7 +106,7 @@ input.search-bar {
   opacity: 75%;
   text-align: center;
   backdrop-filter: blur(5px);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0.4rem 1.4rem 0 #eee;
 }
 .footer a{
   margin: 100px;
