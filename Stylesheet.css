@@ -193,6 +193,10 @@ menu{
   position: relative;
   display: none;
 }
+#setmenu{
+  width: 200px;
+  height: 200px;
+}
 li:hover { 
   background-color:	#383838;
 }
