@@ -178,3 +178,6 @@ function updatevisitcount() {
     })
 }
 
+function setop(){
+  if(){} else{}
+}

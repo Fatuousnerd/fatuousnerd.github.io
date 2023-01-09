@@ -33,7 +33,7 @@
           <div class="wind">Fast</div>  
           <!--<div class="pressure">Pressure</div>-->  
         </div> 
-        <button title="settings" class="settings" id="settings" type="menu"><i class="material-icons">settings</i></button> 
+        <button title="settings" class="settings" id="settings" type="menu" onclick="setop()"><i class="material-icons">settings</i></button> 
       </div> 
       <div class="footer">
         <a href="About.html" >About</a>
@@ -41,6 +41,17 @@
         <a href='soon.html'>Feedback</a>
       </div>
      <button title="history" class="history" id="history" type="menu" onclick="history()"><span class="material-symbols-outlined">menu</span></button>
+
+     <div id="setmenu">
+      <menu>
+        <li id="ms">
+          <option value="">
+            <select name="" id="">Metric</select>
+            <select name="" id="">Imperial</select>
+          </option>
+        </li>
+      </menu>
+     </div>
      
      <div id="time">
       <div id="timedate">

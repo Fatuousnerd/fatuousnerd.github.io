@@ -177,8 +177,8 @@ ul{
   border-radius: 5px;
   color: #bbb;
   position: absolute;
-  top: 90%;
-  left: 95%;
+  top: 80%;
+  left: 80%;
   cursor: pointer;
 }
 .settings:hover{
