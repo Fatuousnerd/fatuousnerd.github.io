@@ -173,8 +173,16 @@ ul{
 }
 .settings{
   background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(10px);
   border-radius: 5px;
+  color: #bbb;
+  position: absolute;
+  top: 90%;
+  left: 95%;
+}
+.settings:hover{
+  color: #000;
+  backdrop-filter: blur(15px);
 }
 li:hover { 
   background-color:	#383838;
